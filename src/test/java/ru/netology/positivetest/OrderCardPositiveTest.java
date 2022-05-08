@@ -20,7 +20,7 @@ public class OrderCardPositiveTest {
 
         SelenideElement form = $(".form-field_theme_alfa-on-white");
         $("[data-test-id=name] input").setValue("Иванов Сергей");
-        $("[data-test-id=phone] input").setValue("+79789991100");
+        $("[data-test-id=phone] input").setValue("+7978");
         $("[data-test-id=agreement]").click();
         $("[type=button]").click();
         $("[data-test-id=order-success]").shouldHave(exactText("Ваша заявка успешно " +
