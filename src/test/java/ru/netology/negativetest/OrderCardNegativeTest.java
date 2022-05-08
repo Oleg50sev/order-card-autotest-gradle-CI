@@ -23,7 +23,7 @@ public class OrderCardNegativeTest {
         $("[data-test-id=phone] input").setValue("");
         $("[data-test-id=agreement]").click();
         $("[type=button]").click();
-        $(".input_type_text .input__sub").shouldHave(exactText("Поле обязательно для " +
+        $(".input_type_text .input__sub").shouldHave(exactText("обязательно для " +
                 "заполнения"));
     }
 
