@@ -18,7 +18,6 @@ public class OrderCardNegativeTest {
     @Test
     public void shouldInputAllFieldsEmpty() {
 
-        SelenideElement form = $(".form-field_theme_alfa-on-white");
         $("[data-test-id=name] input").setValue("");
         $("[data-test-id=phone] input").setValue("");
         $("[data-test-id=agreement]").click();
@@ -30,7 +29,6 @@ public class OrderCardNegativeTest {
     @Test
     public void shouldInputFieldNameEmpty() {
 
-        SelenideElement form = $(".form-field_theme_alfa-on-white");
         $("[data-test-id=name] input").setValue("");
         $("[data-test-id=phone] input").setValue("+79789991100");
         $("[data-test-id=agreement]").click();
@@ -42,7 +40,6 @@ public class OrderCardNegativeTest {
     @Test
     public void shouldInputSurnameEng() {
 
-        SelenideElement form = $(".form-field_theme_alfa-on-white");
         $("[data-test-id=name] input").setValue("Ivanov Sergey");
         $("[data-test-id=phone] input").setValue("+79789991100");
         $("[data-test-id=agreement]").click();
@@ -54,7 +51,6 @@ public class OrderCardNegativeTest {
     @Test
     public void shouldInputFieldNumberTelEmpty() {
 
-        SelenideElement form = $(".form-field_theme_alfa-on-white");
         $("[data-test-id=name] input").setValue("Иванов Сергей");
         $("[data-test-id=phone] input").setValue("");
         $("[data-test-id=agreement]").click();
@@ -66,7 +62,6 @@ public class OrderCardNegativeTest {
     @Test
     public void shouldInputInvalidNumberTel() {
 
-        SelenideElement form = $(".form-field_theme_alfa-on-white");
         $("[data-test-id=name] input").setValue("Иванов Сергей");
         $("[data-test-id=phone] input").setValue("+7978");
         $("[data-test-id=agreement]").click();
@@ -78,7 +73,6 @@ public class OrderCardNegativeTest {
     @Test
     public void shouldInputTermsAgreementNoClick() {
 
-        SelenideElement form = $(".form-field_theme_alfa-on-white");
         $("[data-test-id=name] input").setValue("Иванов Сергей");
         $("[data-test-id=phone] input").setValue("+79789991100");
         $("[type=button]").click();
